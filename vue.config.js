@@ -3,19 +3,19 @@ const path = require('path')
 
 module.exports = {
   devServer: {
-    open: true, // 是否自动打开浏览器页面
+    open: true // 是否自动打开浏览器页面
     // host: 'localhost',    // 指定使用一个 host，默认是 localhost
     // port: 8080,         // 端口地址
-    proxy: {
-      '/login/*': {
-        target: 'http://testapi.wengyingwangluo.cn/'
-        // ws: true,
-        // changeOrigin: true
-      },
-      '/foo': {
-        target: '<other_url>'
-      }
-    }
+    //  proxy: {
+    //   '/login/*': {
+    //     target: 'http://testapi.wengyingwangluo.cn/'
+    //     // ws: true,
+    //     // changeOrigin: true
+    //   },
+    //   '/foo': {
+    //     target: '<other_url>'
+    //   }
+    // }
   },
 
   configureWebpack: config => { // webpack自定义配置

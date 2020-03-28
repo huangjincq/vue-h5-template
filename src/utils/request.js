@@ -3,11 +3,11 @@ import store from '../store'
 import { Toast } from 'vant'
 
 const ENV = process.env.NODE_ENV
-const BASE_API = process.env.BASE_API //  连接测试服务器 请求跨域数据
+const VUE_APP_BASE_API = process.env.VUE_APP_BASE_API //  连接测试服务器 请求跨域数据
 
 // 创建axios实例
 const service = axios.create({
-  baseURL: BASE_API, // 设置默认的BASE_API
+  baseURL: VUE_APP_BASE_API, // 设置默认的BASE_API
   timeout: 60 * 1000 // 请求超时时间 60s
 })
 
